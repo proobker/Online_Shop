@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proobker Commerce</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" width="50" height="50" style="float:left;">
+        <h1>Proobker Commerce</h1>
+    </header>
+    <nav class="navbar">
+        <div class="navdiv">
+            <a href="about.html" target="_blank" class="btn">About Us</a>
+            <input type="text" id="searchInput" placeholder="Enter a word" class="btn">
+            <a onclick="searchWord()" class="btn">Search</a>
+            <a onclick="clearSearch()" class="btn">Clear Search</a>
+            <a onclick="scrollToSection()" class="btn"><img src='img/cart.png'/></a>
+            <a href="forms.html" class="sign" target="_blank">Sign In</a>
+            <a href="forms.html" class="sign" target="_blank">Sign Up</a>
+        </div>
+    </nav>
+    <nav class="navbar">
+        <H1 style="color: aliceblue;">Shopping : </H1>
+        <div class="navdiv">
+            <a href="clothing.html" class="btn">Clothing</a>
+            <a href="grocery.html" class="btn">Grocery</a>
+            <a href="electronic.html" class="btn">Electronic</a>
+            <a href="toys.html" class="btn">Toys</a>
+            <a href="other.html" class="btn">Other Stuffs</a>
+        </div>
+    </nav>
+    <marquee width="100%" Behavior="alternate">10% off!!! Buy Now!!! Limited Offer!!!</marquee>
+    <section id="content">
+            <h2>Welcome to our store!</h2>
+            <center>
+                <div class="product">
+                    <h3>Festables</h3>
+                    <img class="img" src="img/product/festables.jpg" >
+                    <p>Price: $19.99</p>
+                    <button onclick="addToCart('Festables', 19.99)">Add to Cart</button>
+                    <button><a href="https://feastables.com/products/deez-nutz-chocolate" target="_blank">Buy Now</a></button>
+                </div>
+                <div class="product">
+                    <h3>Cheesy Balls</h3>
+                    <img class="img" src="img/product/cheese.jpg">
+                    <p>Price: $25.63</p>
+                    <button onclick="addToCart('Cheesy Balls', 25.63)">Add to Cart</button>
+                    <button><a href="https://a.co/d/aisxqie" target="_blank">Buy Now</a></button>
+                </div>
+                <div class="product">
+                    <h3>Egg</h3>
+                    <img class="img" src="img/product/egg.jpg">
+                    <p>Price: $20.88</p>
+                    <button onclick="addToCart('Egg', 20.88)">Add to Cart</button>
+                    <button><a href="https://a.co/d/dpGVrqb" target="_blank">Buy Now</a></button>
+                </div>
+                <div class="product">
+                    <h3>Egg</h3>
+                    <img class="img" src="img/product/egg.jpg">
+                    <p>Price: $20.88</p>
+                    <button onclick="addToCart('Egg', 20.88)">Add to Cart</button>
+                    <button><a href="https://a.co/d/dpGVrqb" target="_blank">Buy Now</a></button>
+                </div>
+            </center>
+            <section id="targetSection">
+                <div id="cart">
+                    <h2>Shopping Cart</h2>
+                    <ul id="cart-items"></ul>
+                    <p>Total: $<span id="cart-total">0.00</span></p>
+                </div>
+            </section>
+            <div>
+                <button><a href="https://drinkprime.com/" target="_blank"><img src="img/ad.jpg"></a></button>
+            </div>
+            <script src="script.js"></script>
+            <h4>2023 Proobker. All rights reserved.©</h4>
+        </section>
+    </body>
+</html>

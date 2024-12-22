@@ -1,0 +1,155 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(10, 168, 196);
+}
+
+header {
+    background-color: #500e0e;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+div {
+    padding: 20px;
+}
+
+.product {
+    border: 10px solid aqua;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    background-color: #fff;
+    transition: transform 0.3s;
+    display: table;
+    display: table-row;
+    display: table-cell;
+    height: 300px;
+    width: 200px;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    box-align: center;
+}
+
+.product:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    background: rgb(3, 56, 92);
+    font-family: Calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 75px;
+    display: flex;
+}
+
+.navdiv {
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+
+.btn,
+.sign {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    transition: color 0.3s, transform 0.3s; 
+}
+
+.btn:hover,
+.sign:hover {
+    color: #b9b9b9;
+    transform: translateY(-10px);
+    align-items: right;
+    align-content:flex-end;
+}
+
+.navbar input#searchInput,
+.topnav input[type=text] {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+form {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.box {
+    width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.box-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.box h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.box h5 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.box p {
+    text-align: justify;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.box li {
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+
+.box li a {
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+}
+
+.box li a:hover {
+    color: #b9b9b9;
+}
+
+.map {
+    max-width: 80%;
+    color: red;
+    width: 500px;
+    height: 500px;
+    border: 10px;
+}

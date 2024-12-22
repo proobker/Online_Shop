@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Proobker Commerce</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            text-align: left;
+            background-color:rgb(153, 108, 108)
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="img/logo.png" width="50" height="50" style="float:left;">
+    <h1>Forms</h1>
+</header>
+<nav class="navbar">
+    <div class="navdiv">
+        <a href="main front.html" target="_blank" class="btn">Home</a>
+        <a href="about.html" target="_blank" class="btn">About Us</a>
+        <input type="text" id="searchInput" placeholder="Enter a word">
+        <a onclick="searchWord()" class="btn">Search</a>
+        <a onclick="clearSearch()" class="btn">Clear Search</a>
+        <a onclick="scrollToSection()" class="btn"><img src='img/cart.png'/></a>
+        <a href="forms.html" class="sign" target="_blank">Sign In</a>
+        <a href="forms.html" class="sign" target="_blank">Sign Up</a>
+    </div>
+</nav>
+<marquee width="100%" Behavior="alternate">Login for 10% off!!! Limited Offer!!!</marquee>
+<form>
+    <fieldset style="left:1%; right:1% ; background-color: rgb(98, 161, 140);">
+        <legend style="font-size:30px; font-family: sans-serif; color:#5cee75">Personal Details</legend>
+        <section id="content">
+            <p> 
+                <label for="fname" id="fname_label">First Name</label>
+                <input type="text" id="fname" name="fname" required><br>
+            </p>
+            <p> 
+                <label for="lname" id="lname_label">Last Name</label>
+                <input type="text" name="lname" required><br>
+            </p>   
+            <p>
+                <label>Gender :</label>
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+                <label><input type="radio" name="gender" value="female">Rather not to say</label>
+                <label><input type="radio" name="gender" value="female">Attack Helicopter</label>
+            </p>
+            <p>
+                <label>Email:<input type="email" name="email" required></label>
+            </p>
+            <p>
+                <label>Password:<input type="password" name="password" required></label>
+            </p>
+            <p>
+                <label>Phone Number:<input type="number" name="number" required></label>
+            </p>
+            <p>
+                <label>Date of Birth:<input type="date" name="birthDate" required></label>
+            </p>
+            <p>
+                <label>
+                    Address :
+                    <br />
+                    <textarea name="address" cols="30"rows="3" placeholder="Type Your Address" required></textarea>
+                </label>
+            </p>
+            <p>
+                <label>What is Your Favorite Color</label>
+                <input id="color_picker" type="color" onchange="showHex();"> 
+                <span id="color_hex_value"></span> <br><br>
+            </p>
+        </section>
+        <section>
+            <input type="reset" value="Clear">
+            <input type="button" value="Submit">
+        </section>
+    </fieldset>
+</form>
+<script src="script.js"></script>
+<h4>2023 Proobker. All rights reserved.©</h4>
+</body>
+</html>
